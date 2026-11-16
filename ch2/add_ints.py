@@ -1,5 +1,6 @@
 """Add two integers."""
 
+
 def main() -> None:
     """Read in two integers from user input and add them."""
 

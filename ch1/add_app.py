@@ -1,9 +1,9 @@
 """A simple addition app"""
 
+
 # Δημιουργία και αρχικοποίηση μεταβλητών
 num1 = 10
 num2 = 5
-
 
 # Data processing: Εκτέλεση πρόσθεσης
 total = num1 + num2
