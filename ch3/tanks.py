@@ -4,20 +4,19 @@
 - Κοκκινο: και οι δύο δεξαμενές είναι κάτω από το όριο.
 """
 
-
 LOW_LEVEL = 20
 
 
 def main() -> None:
     """Διαβάζει τα επίπεδα των δεξαμενών και εκτυπώνει την κατάσταση τους."""
+
     # tank1 = int(input("Εισάγετε το επίπεδο της δεξαμενής 1: "))
     # tank2 = int(input("Εισάγετε το επίπεδο της δεξαμενής 2: "))
     tank1 = 60
     tank2 = 15
 
-    is_red_alarm = tank1 < LOW_LEVEL and tank2 < LOW_LEVEL
+    is_red_alarm = (tank1 < LOW_LEVEL) and (tank2 < LOW_LEVEL)
     is_orange_alarm = (tank1 < LOW_LEVEL) ^ (tank2 < LOW_LEVEL)  # XOR: True αν μόνο μία από τις δύο συνθήκες είναι αληθής
-
 
     # Εκτύπωση αποτελεσμάτων
     print(f"Επίπεδο δεξαμενής 1: {tank1}%, Επίπεδο δεξαμενής 2: {tank2}%")
