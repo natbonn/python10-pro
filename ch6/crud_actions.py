@@ -41,7 +41,7 @@ try:
     product = products[index]       # IndexError if the index is out of bounds
     print(f"Butter is at index {index}. ")
     products[index] = "Margarine"   # Update the product at the found index
-    products.remove("Butter")
+    products.remove("Butter")       # ValueError if doesnt exist
     print(f"Butter is at index {index}.")
 except ValueError:
     print("Butter is not in the list.")
