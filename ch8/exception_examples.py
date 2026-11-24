@@ -27,5 +27,5 @@ try:
     with open("non_existent_file.txt", encoding="utf-8") as file:   # μή υπάρχον αρχείο
         content = file.read()
         print(content)
-    except FileNotFoundError as e:
+except OSError as e:
     print(f"Σφάλμα: {e}")
